@@ -31,7 +31,7 @@ class ModPhocaDownloadHelper
 					->from($db->quoteName('#__phocadownload'))
 		//			->where ($db->quoteName('publish_up').'< CURRENT_DATE AND '.$db->quoteName('publish_down').'> CURRENT_DATE AND published=1')//were curdate() gets the current date
 		//			->where ($db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
-					->where ('catid = '$db->Quote($params).' AND '.$db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
+					->where ('catid = '.$db->Quote($params).' AND '.$db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
 					->order ('publish_up DESC');
 		// Prepare the query
 		$db->setQuery($query);
