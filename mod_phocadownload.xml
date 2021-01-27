@@ -56,13 +56,13 @@
 		<schemas>
 			<schemapath type="mysql">sql/mysql/updates</schemapath>
 		</schemas> 
-	</update>
+	</update>-->
 	<updateservers>
 		<server
 			type="extension"
 			priority="2"
 			name="Phocadownload">
-			https://raw.githubusercontent.com/Gyurltrini/mod_helloworld/main/helloworld_update.xml
+			https://raw.githubusercontent.com/Gyurltrini/mod_phocadownload/main/update.xml
 		</server>
-	</updateservers>-->
+	</updateservers>
 </extension>
