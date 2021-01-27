@@ -6,7 +6,7 @@
 		<element>mod_phocadownload</element>
 		<type>module</type>
 		<client>0</client>
-		<version>1.0.3a</version>
+		<version>1.0.4</version>
 		<infourl title="Phoca Download Module" />
 		<downloads>
 			<downloadurl 
