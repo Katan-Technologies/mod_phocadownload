@@ -5,7 +5,7 @@
 	client="site"
 	method="upgrade">
     <name>Phoca Download Module</name>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<creationDate>26-01-2021</creationDate><!-- dd-mm-yyy -->
 
     <author>Kathryn Anderson</author>
@@ -31,16 +31,16 @@
 		<folder>sql/mysql/updates</folder>-->
     </files>
     <config>
-		<!--<fields name="params">
+		<fields name="params">
 			<fieldset name="basic">
 				<field
 					   name="lang"
 					   type="sql"
 					   default="1"
-					   label="Select a language"
-					   query="SELECT id AS value, lang FROM #__helloworld" />
+					   label="Select a category"
+					   query="SELECT id AS value, title FROM #__phocadownload_categories" />
 			</fieldset>
-		</fields>-->
+		</fields>
     </config>
 	<!--<install>
 		 <sql>
