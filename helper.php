@@ -30,7 +30,8 @@ class ModPhocaDownloadHelper
 					->select($db->quoteName(array('title','catid','filename','publish_up','publish_down')))//should also get the category id and what ever fields are needed to associate with the pdf file (catid, filename,filename_preview)
 					->from($db->quoteName('#__phocadownload'))
 		//			->where ($db->quoteName('publish_up').'< CURRENT_DATE AND '.$db->quoteName('publish_down').'> CURRENT_DATE AND published=1')//were curdate() gets the current date
-					->where ($db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
+		//			->where ($db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
+					->where ('id = '$db->Quote($params).' AND '.$db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
 					->order ('publish_up DESC');
 		// Prepare the query
 		$db->setQuery($query);
