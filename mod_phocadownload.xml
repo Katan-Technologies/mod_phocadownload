@@ -34,7 +34,7 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field
-					   name="lang"
+					   name="cat"
 					   type="sql"
 					   default="1"
 					   label="Select a category"
