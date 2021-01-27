@@ -4,14 +4,14 @@
 	version="3.7"
 	client="site"
 	method="upgrade">
-    <name>Phoca Download Module</name>
+    <name>MOD_PHOCADOWNLOAD</name>
 	<version>1.0.3</version>
 	<creationDate>26-01-2021</creationDate><!-- dd-mm-yyy -->
 
     <author>Kathryn Anderson</author>
     <authorUrl>http://kathrynanderson.great-site.net/</authorUrl>
     <authorEmail>kathryn.ma@gmail.com</authorEmail>
-    <description>A simple Phoca Download module to accompany the Phoca Download component developed by https://www.phoca.cz/</description>
+    <description>MOD_PHOCADOWNLOAD_DESC</description>
 	<copyright>Kathryn Anderson (c) 2021. All rights reserved.</copyright>
 	<!--<languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_phocadownload.ini</language>
