@@ -18,8 +18,10 @@ defined('_JEXEC') or die;
 require_once dirname(__FILE__) . '/helper.php';
 
 //$phocadownload = modPhocaDownloadHelper::getDownloads($params);
-$category = $params->get('title','1');
-$phocadownload = modPhocaDownloadHelper::getDownloads($category);
+//$language = $params->get('title','1');
+//$phocadownload = modPhocaDownloadHelper::getDownloads($language);
+$language = $params->get('title', '1');
+$phocadownload     = modPhocaDownloadHelper::getDownloads( $language );
 /**
   * This retrieves the lang parameter we stored earlier. Note the second part
   * which assigns the default value of 1 if the parameter cannot be
