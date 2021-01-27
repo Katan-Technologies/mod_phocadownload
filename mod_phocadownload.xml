@@ -5,7 +5,7 @@
 	client="site"
 	method="upgrade">
     <name>Phoca Download Module</name>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<creationDate>26-01-2021</creationDate><!-- dd-mm-yyy -->
 
     <author>Kathryn Anderson</author>
@@ -61,13 +61,7 @@
 		<server
 			type="extension"
 			priority="2"
-			name="Helloworld">
-			http://posappsvr3.mpu.gov.tt/joomla_ext/modules/hello_world/helloworld_update.xml
-		</server>
-		<server
-			type="extension"
-			priority="2"
-			name="Helloworld">
+			name="Phocadownload">
 			https://raw.githubusercontent.com/Gyurltrini/mod_helloworld/main/helloworld_update.xml
 		</server>
 	</updateservers>-->
