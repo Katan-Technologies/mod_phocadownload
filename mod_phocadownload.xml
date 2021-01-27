@@ -13,10 +13,10 @@
     <authorEmail>kathryn.ma@gmail.com</authorEmail>
     <description>MOD_PHOCADOWNLOAD_DESC</description>
 	<copyright>Kathryn Anderson (c) 2021. All rights reserved.</copyright>
-	<!--<languages folder="language">
+	<languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_phocadownload.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_phocadownload.sys.ini</language>
-    </languages>-->
+    </languages>
     <files>
         <filename>mod_phocadownload.xml</filename>
         <filename module="mod_phocadownload">mod_phocadownload.php</filename>
