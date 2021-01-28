@@ -39,7 +39,7 @@
 			       default="1" 
 			       label="Select a category" 
 			       query="SELECT id AS value, title FROM #__phocadownload_categories" />
-			<field name="maxEntries" type="list" default="" label="Select an option" description="">
+			<field name="maxentries" type="list" default="" label="Select an option" description="">
 				<option value="0">All</option>
 				<option value="1">1</option>
 				<option value="0">2</option>
