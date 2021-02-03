@@ -11,8 +11,8 @@
 	<authorUrl>http://kathrynanderson.great-site.net/</authorUrl>
 	<authorEmail>kathryn.ma@gmail.com</authorEmail>
 	<description>MOD_PHOCADOWNLOAD_DESC</description>
-	<scriptfile>script.php</scriptfile>
 	<copyright>Kathryn Anderson (c) 2021. All rights reserved.</copyright>
+	<scriptfile>script.php</scriptfile>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.mod_phocadownload.ini</language>
 		<language tag="en-GB">en-GB/en-GB.mod_phocadownload.sys.ini</language>
