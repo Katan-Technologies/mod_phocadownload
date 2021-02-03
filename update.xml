@@ -99,7 +99,7 @@
 	<update>
 		<name>Phoca Download Module</name>
 		<description>A simple Phoca Download module</description>
-		<element>mod_pocadownload</element>
+		<element>mod_phocadownload</element>
 		<type>module</type>
 		<client>0</client>
 		<version>1.0.2</version>
