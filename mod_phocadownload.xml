@@ -4,57 +4,57 @@
 	version="3.7"
 	client="site"
 	method="upgrade">
-    <name>MOD_PHOCADOWNLOAD</name>
-	<version>1.0.5</version>
+	<name>MOD_PHOCADOWNLOAD</name>
+	<version>1.0.6</version>
 	<creationDate>26-01-2021</creationDate><!-- dd-mm-yyy -->
-
-    <author>Kathryn Anderson</author>
-    <authorUrl>http://kathrynanderson.great-site.net/</authorUrl>
-    <authorEmail>kathryn.ma@gmail.com</authorEmail>
-    <description>MOD_PHOCADOWNLOAD_DESC</description>
+	<author>Kathryn Anderson</author>
+	<authorUrl>http://kathrynanderson.great-site.net/</authorUrl>
+	<authorEmail>kathryn.ma@gmail.com</authorEmail>
+	<description>MOD_PHOCADOWNLOAD_DESC</description>
+	<scriptfile>script.php</scriptfile>
 	<copyright>Kathryn Anderson (c) 2021. All rights reserved.</copyright>
 	<languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_phocadownload.ini</language>
-        <language tag="en-GB">en-GB/en-GB.mod_phocadownload.sys.ini</language>
-    </languages>
-    <files>
-        <filename>mod_phocadownload.xml</filename>
-        <filename module="mod_phocadownload">mod_phocadownload.php</filename>
-        <filename>index.html</filename>
-        <filename>helper.php</filename>
-        <filename>tmpl/default.php</filename>
-        <filename>tmpl/index.html</filename>
+		<language tag="en-GB">en-GB/en-GB.mod_phocadownload.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_phocadownload.sys.ini</language>
+	</languages>
+	<files>
+        	<filename>mod_phocadownload.xml</filename>
+        	<filename module="mod_phocadownload">mod_phocadownload.php</filename>
+        	<filename>index.html</filename>
+        	<filename>helper.php</filename>
+        	<filename>tmpl/default.php</filename>
+        	<filename>tmpl/index.html</filename>
 		<!--<filename>sql/mysql/install.mysql.utf8.sql</filename>
-        <filename>sql/mysql/uninstall.mysql.utf8.sql</filename>
+        	<filename>sql/mysql/uninstall.mysql.utf8.sql</filename>
 		<folder>sql</folder>
 		<folder>sql/mysql</folder>
 		<folder>sql/mysql/updates</folder>-->
-    </files>
-    <config>
-	<fields name="params">
-		<fieldset name="basic">
-			<field 
-			       name="title" 
-			       type="sql"
-			       default="1" 
-			       label="Select a category" 
-			       query="SELECT id AS value, title FROM #__phocadownload_categories" />
-			<field name="maxentries" type="list" default="" label="Select an option" description="">
-				<option value="0">All</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			</field>
-		</fieldset>
-	</fields>
-    </config>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+				name="title" 
+				type="sql"
+				default="1" 
+				label="Select a category" 
+				query="SELECT id AS value, title FROM #__phocadownload_categories" />
+				<field name="maxentries" type="list" default="" label="Select an option" description="">
+					<option value="0">All</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
 	<!--<install>
 		 <sql>
 			 <file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
