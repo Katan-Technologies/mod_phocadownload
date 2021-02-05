@@ -26,24 +26,19 @@ class ModPhocaDownloadHelper
 		// Obtain a database connection
 		$db = JFactory::getDbo();
 		// Retrieve the shout. Note that we are now retrieving the id not the lang field.
-		$query = $db->getQuery(true)
+/*		$query = $db->getQuery(true)
 					->select($db->quoteName(array('title','alias','id','catid','filename','publish_up','publish_down','access')))//should also get the category id and what ever fields are needed to associate with the pdf file (catid, filename,filename_preview)
 					->from($db->quoteName('#__phocadownload'))
-		//			->where ($db->quoteName('publish_up').'< CURRENT_DATE AND '.$db->quoteName('publish_down').'> CURRENT_DATE AND published=1')//were curdate() gets the current date
-		//			->where ($db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
-		//			->where ('catid = '.$db->Quote($params).' AND '.$db->quoteName('publish_up').'<= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
 					->where ('catid = '.$db->Quote($params).' AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
-					->order ('publish_up DESC');
-	    $query2 = $db->getQuery(true)
-					->select($db->quoteName(array('alias')))//should also get the category id and what ever fields are needed to associate with the pdf file (catid, filename,filename_preview)
-					->from($db->quoteName('#__phocadownload_categories'))
-		//			->where ($db->quoteName('publish_up').'< CURRENT_DATE AND '.$db->quoteName('publish_down').'> CURRENT_DATE AND published=1')//were curdate() gets the current date
-		//			->where ($db->quoteName('publish_down').'>= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
-		//			->where ('catid = '.$db->Quote($params).' AND '.$db->quoteName('publish_up').'<= CURRENT_DATE AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
-					->where ('id = '.$db->Quote($params).' AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
-					->order ('publish_up DESC');
+					->order ('publish_up DESC');*/
+	    	$query
+ 		->select($db->quoteName(array('a.title', 'a.alias', 'a.id', 'a.catid', 'a.filename', 'a.publish_up', 'a.publish_down', 'a.access', 'b.id', 'b.alias')))
+ 		->from($db->quoteName('#__phocadownload', 'a'))
+ 		->join('INNER', $db->quoteName('#__phocadow3nload_categories', 'b') . ' ON (' . $db->quoteName('a.catid') . ' = ' . $db->quoteName('b.id') . ')')
+ 		->where($db->quoteName('b.id') . ' LIKE \'z%\'')
+ 		//->order($db->quoteName('a.created') . ' DESC');
+ 
 		// Prepare the query
-	    	$query->union($query2);
 		$db->setQuery($query);
 		// Load the row.
 		
