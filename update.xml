@@ -6,6 +6,30 @@
 		<element>mod_phocadownload</element>
 		<type>module</type>
 		<client>0</client>
+		<version>1.0.6.1</version>
+		<infourl title="Phoca Download Module" />
+		<downloads>
+			<downloadurl 
+				type="full" 
+				format="zip">
+				https://github.com/Gyurltrini/mod_phocadownload/archive/1.0.6.1alpha.zip
+        	</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Kathryn Anderson</maintainer>
+		<maintainerurl>http://kathrynanderson.great-site.net/</maintainerurl>
+		<!--<section>STS</section>-->
+		<targetplatform name="joomla" version="[34].[0123456789]" />
+		<!--<php_minimum>7.4</php_minimum>-->
+	</update>
+	<update>
+		<name>Phoca Download Module</name>
+		<description>A simple Phoca Download module</description>
+		<element>mod_phocadownload</element>
+		<type>module</type>
+		<client>0</client>
 		<version>1.0.6</version>
 		<infourl title="Phoca Download Module" />
 		<downloads>
