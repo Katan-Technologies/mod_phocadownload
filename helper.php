@@ -35,8 +35,8 @@ class ModPhocaDownloadHelper
  		->select($db->quoteName(array('a.title', 'a.alias', 'a.id', 'a.catid', 'a.filename', 'a.publish_up', 'a.publish_down', 'a.access', 'b.id', 'b.alias')))
  		->from($db->quoteName('#__phocadownload', 'a'))
  		->join('INNER', $db->quoteName('#__phocadow3nload_categories', 'b') . ' ON (' . $db->quoteName('a.catid') . ' = ' . $db->quoteName('b.id') . ')')
- 		->where($db->quoteName('b.id') . ' LIKE \'z%\'');
- 		//->order($db->quoteName('a.created') . ' DESC');
+ 		->where($db->quoteName('b.id') . ' LIKE \'z%\'')
+ 		->order($db->quoteName('a.publish_up') . ' DESC');
  
 		// Prepare the query
 		$db->setQuery($query);
