@@ -18,7 +18,7 @@ foreach($phocadownload as $download){
 		echo 'publish down time is not set<br/>';
 	}*/
 //	if (strtotime($currentDateTime)>=strtotime($download['5'])){echo 'it is greater!<br/>';}
-	echo 'Category is '.$cat;
+	echo 'Category is '.$cat.'</br>';
 	if(strtotime($currentDateTime)>=strtotime($download['5'])&&((strtotime($currentDateTime)<=strtotime($download['6']))||(strtotime($download['6'])==strtotime('0000-00-00 00:00:00')))){//since I could not do this in the sql statement I'm doing this here ... if current date is later than or equal to the publish_up date
 		echo 'title: '.$download['0'].'<br/>';
 //			echo 'count: '.$count.'<br/>';
