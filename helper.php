@@ -43,6 +43,7 @@ class ModPhocaDownloadHelper
 					->where ('id = '.$db->Quote($params).' AND published=1')//were curdate() gets the current date ... could not get comparison between publish_up and publish_down to work in the same clause
 					->order ('publish_up DESC');
 		// Prepare the query
+	    	$query->union($query2);
 		$db->setQuery($query);
 		// Load the row.
 		
