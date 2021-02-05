@@ -5,7 +5,7 @@
 	client="site"
 	method="upgrade">
 	<name>MOD_PHOCADOWNLOAD</name>
-	<version>1.0.6</version>
+	<version>1.0.6.1</version>
 	<creationDate>26-01-2021</creationDate><!-- dd-mm-yyy -->
 	<author>Kathryn Anderson</author>
 	<authorUrl>http://kathrynanderson.great-site.net/</authorUrl>
