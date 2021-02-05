@@ -19,8 +19,8 @@ require_once dirname(__FILE__) . '/helper.php';
 
 //$phocadownload = modPhocaDownloadHelper::getDownloads($params);
 $cat = $params->get('title', '1');
-$cat1 = $params->get('title');
-$cat2 = $params->get('value');
+//$cat1 = $params->get('title');
+//$cat2 = $params->get('value');
 $maxentries = $params->get('maxentries','1');
 $phocadownload     = modPhocaDownloadHelper::getDownloads( $cat );
 /**
