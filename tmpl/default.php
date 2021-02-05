@@ -34,6 +34,6 @@ foreach($phocadownload as $download){
 }
 //use Joomla\CMS\Router\Route;
 //$url = Route::_("index.php?option=com_example&view=showitem&id=14");
-$url = Route::_("index.php?option=com_phocadownload&view=file&id=3");
+//$url = Route::_("index.php?option=com_phocadownload&view=file&id=3");
 //echo $url;
 ?>
