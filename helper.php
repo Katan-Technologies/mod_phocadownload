@@ -69,3 +69,4 @@ $results = $db->loadObjectList();
 	    return $results;
 //   return $results;
     }
+}
