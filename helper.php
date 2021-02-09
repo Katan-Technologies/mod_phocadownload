@@ -67,11 +67,5 @@ $db->setQuery($query);
 // Load the results as a list of stdClass objects (see later for more options on retrieving data).
 $results = $db->loadObjectList();
 	    return $results;
-   return $results;
+//   return $results;
     }
-		
-		// Return the Hello
-		//print_r($result);
-		return $results;
-    }
-}
