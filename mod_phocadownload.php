@@ -19,15 +19,7 @@ require_once dirname(__FILE__) . '/helper.php';
 
 //$phocadownload = modPhocaDownloadHelper::getDownloads($params);
 $cat = $params->get('title', '1');
-//$cat1 = $params->get('title');
-//$cat2 = $params->get('value');
 $maxentries = $params->get('maxentries','1');
 $phocadownload     = modPhocaDownloadHelper::getDownloads( $cat );
-/**
-  * This retrieves the lang parameter we stored earlier. Note the second part
-  * which assigns the default value of 1 if the parameter cannot be
-  * retrieved for some reason.
-**/
-//$language = $params->get('lang', '1');
-//$hello    = modPhocaDownloadHelper::getDownloads( $items );
+
 require JModuleHelper::getLayoutPath('mod_phocadownload');
