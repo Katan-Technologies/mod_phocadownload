@@ -24,6 +24,7 @@
         	<filename>helper.php</filename>
         	<filename>tmpl/default.php</filename>
         	<filename>tmpl/index.html</filename>
+		<filename>css/style.css</filename>
 		<!--<filename>sql/mysql/install.mysql.utf8.sql</filename>
         	<filename>sql/mysql/uninstall.mysql.utf8.sql</filename>
 		<folder>sql</folder>
