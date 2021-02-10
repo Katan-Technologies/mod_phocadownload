@@ -14,15 +14,15 @@
 
 class ModPhocaDownloadHelper
 {
-    /**
-     * Retrieves the hello message
-     *
-     * @param   array  $params An object containing the module parameters
-     *
-     * @access public
-     */    
-    public static function getDownloads($params)
-    {
+	/**
+	* Retrieves the hello message
+	*
+	* @param   array  $params An object containing the module parameters
+	*
+	* @access public
+	*/    
+	public static function getDownloads($params)
+	{
 		// Obtain a database connection
 		$db = JFactory::getDbo();
 
@@ -45,6 +45,6 @@ class ModPhocaDownloadHelper
 
 		// Load the results as a list of stdClass objects (see later for more options on retrieving data).
 		$results = $db->loadRowList();
-	    return $results;
+		return $results;
     }
 }
