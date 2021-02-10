@@ -7,8 +7,9 @@ $currentDateTime = date('Y-m-d H:i:s');
 //echo 'The maximum number of entries to list are: '.$maxentries.'<br/>';
 $count = 1;
 //echo count($phocadownload).'<br/>';
+//print_r($phocadownload);
 foreach($phocadownload as $download){
-	echo ' Title: '.$download['0'].' Job Alias: '.$download['1'].' ID: '.$download['2'].' CatID: '.$download['3'].' PDF: '.$download['4'].' Pup: '.$download['5'].' PDown:'.$download['6'].' Access level: '.$download['7'].' Category Alias: '.$download['8'].'<br/>';
+//	echo ' Title: '.$download['0'].' Job Alias: '.$download['1'].' ID: '.$download['2'].' CatID: '.$download['3'].' PDF: '.$download['4'].' Pup: '.$download['5'].' PDown:'.$download['6'].' Access level: '.$download['7'].' Category Name: '.$download['8'].' Category Alias: '.$download['9'].'<br/>';
 //	echo 'current date / time is less than or equal to the publish down time: '.$currentDateTime<=$download['6'].'<br/>';
 //	echo $download['6'];//==new DateTime('0000-00-00 00:00:00');
 /*	if (strtotime($currentDateTime)<=strtotime($download['6'])){
@@ -32,6 +33,22 @@ foreach($phocadownload as $download){
 	
 //	echo '<br/>';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //use Joomla\CMS\Router\Route;
 //$url = Route::_("index.php?option=com_example&view=showitem&id=14");
 //$url = Route::_("index.php?option=com_phocadownload&view=file&id=3");
