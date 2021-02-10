@@ -14,4 +14,5 @@ foreach($phocadownload as $download){
 		}
 		$count++;
 	}
+}
 ?>
