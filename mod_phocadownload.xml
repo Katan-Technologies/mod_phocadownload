@@ -76,7 +76,7 @@
 			type="extension"
 			priority="2"
 			name="Phocadownload">
-			https://raw.githubusercontent.com/Gyurltrini/mod_phocadownload/main/update.xml
+			https://raw.githubusercontent.com/Katan-Technologies/mod_phocadownload/release_update/update.xml
 		</server>
 	</updateservers>
 </extension>
