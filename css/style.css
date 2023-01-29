@@ -23,7 +23,9 @@ ul.pdlst li a{
 }
 ul.pdlst li a:hover{
 	text-decoration:none !important;
-	text-decoration-line:none;
+	text-decoration:none !important;
+	background-color: lightgrey;
+    font-weight: bold;
 }
 ul.pdlst li a i.fa-download{
 	float: right;
