@@ -11,3 +11,21 @@ p.btn a{
   font-weight: bold; 
   font-size: smaller;
 }
+ul.pdlst{
+	list-style-type: none;
+    margin-left: unset;
+}
+ul.pdlst li{
+	padding: .5em 1em .5em 0;
+}
+ul.pdlst li a{
+	display:block;
+}
+ul.pdlst li a:hover{
+	text-decoration:none !important;
+	text-decoration-line:none;
+}
+ul.pdlst li a i.fa-download{
+	float: right;
+    margin-right: 20%;
+}
