@@ -44,7 +44,8 @@ class ModPhocaDownloadHelper
 		$db->setQuery($query);
 
 		// Load the results as a list of stdClass objects (see later for more options on retrieving data).
-		$results = $db->loadRowList();
+		//$results = $db->loadRowList();
+		$results = $db->loadObjectList();
 		return $results;
     }
 }
