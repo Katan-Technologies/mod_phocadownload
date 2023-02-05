@@ -6,12 +6,12 @@
 	method="upgrade">
 	<name>MOD_PHOCADOWNLOAD</name>
 	<version>1.0.7.1</version>
-	<creationDate>26-01-2021</creationDate><!-- dd-mm-yyy -->
+	<creationDate>01-02-2023</creationDate><!-- dd-mm-yyy -->
 	<author>Kathryn Anderson</author>
 	<authorUrl>http://gokatan.com</authorUrl>
 	<authorEmail>katan@gokatan.com</authorEmail>
 	<description>MOD_PHOCADOWNLOAD_DESC</description>
-	<copyright>Kathryn Anderson (c) 2021. All rights reserved.</copyright>
+	<copyright>Kathryn Anderson (c) 2023. All rights reserved.</copyright>
 	<scriptfile>script.php</scriptfile>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.mod_phocadownload.ini</language>
