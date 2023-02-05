@@ -29,5 +29,23 @@ ul.pdlst li a:hover{
 }
 ul.pdlst li a i.fa-download{
 	float: right;
-    margin-right: 20%;
+	color:darkblue;
+	margin-left:.5em
+}
+ul.pdlst li a i.fa-file-pdf{
+	color:red;
+}
+.pdm-title,.pdm-dwn{
+	display:inline-block;
+}
+.pdm-dwn{
+	float:right;
+	width:25%;
+	text-align:right;
+}
+.pdm-title{
+	max-width:75%;
+}
+.pdm-dwn span{
+	font-style:italic;
 }
