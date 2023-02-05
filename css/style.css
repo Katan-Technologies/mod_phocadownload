@@ -49,3 +49,6 @@ ul.pdlst li a i.fa-file-pdf{
 .pdm-dwn span{
 	font-style:italic;
 }
+.pdm-title, .pdm-dwn{
+	width: 6rem !important;
+}
