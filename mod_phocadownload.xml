@@ -25,11 +25,6 @@
         	<filename>tmpl/default.php</filename>
         	<filename>tmpl/index.html</filename>
 		<filename>css/style.css</filename>
-		<!--<filename>sql/mysql/install.mysql.utf8.sql</filename>
-        	<filename>sql/mysql/uninstall.mysql.utf8.sql</filename>
-		<folder>sql</folder>
-		<folder>sql/mysql</folder>
-		<folder>sql/mysql/updates</folder>-->
 	</files>
 	<config>
 		<fields name="params">
@@ -40,7 +35,7 @@
 				default="1" 
 				label="Select a category" 
 				query="SELECT id AS value, title FROM #__phocadownload_categories" />
-				<field name="maxentries" type="list" default="" label="Select an option" description="">
+				<field name="maxentries" type="list" default="" label="# Downloads" description="">
 					<option value="0">All</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -56,21 +51,6 @@
 			</fieldset>
 		</fields>
 	</config>
-	<!--<install>
-		 <sql>
-			 <file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
-		 </sql>
-	</install>
-	<uninstall>
-		 <sql>
-			 <file driver="mysql" charset="utf8">sql/mysql/uninstall.mysql.utf8.sql</file>
-		 </sql>
-	</uninstall>
-	<update> 
-		<schemas>
-			<schemapath type="mysql">sql/mysql/updates</schemapath>
-		</schemas> 
-	</update>-->
 	<updateservers>
 		<server
 			type="extension"
