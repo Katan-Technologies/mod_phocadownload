@@ -44,5 +44,5 @@ foreach($phocadownload as $download){
     }
 }
 echo '</ul>';
-echo '<p style="background-color: orange; border-radius: 10px; padding: 5px 10px 5px 10px; margin-top: 10px; display: inline-flex"><a style="color: white; font-weight: bold; font-size: smaller" href="'.$compURL.'">View & Download All</a></p>';
+echo '<p class="pdbtn"><a href="'.$compURL.'">View & Download All</a></p>';
 ?>
