@@ -96,7 +96,7 @@ class mod_phocaDownloadModuleInstallerScript
 				echo 'Component Enabled: '.JComponentHelper::isEnabled('com_phocadownload').'<br/>';
 				echo 'Get Component 2: '.JComponentHelper::getComponent('com_phocadownload', bool strict = false).'<br/>';*/
 			//check if component Phoca Download is installed and enabled
-			$db = JFactory:getDbo();
+			$db = JFactory::getDbo();
 			$query = $db->getQuery(true);
 			$query 
 				->select(array('extension_id','name','type','element','client_id','enabled'))
