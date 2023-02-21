@@ -106,6 +106,13 @@ class mod_phocaDownloadModuleInstallerScript
 			$results = $db->loadObjectList();
 			echo 'Checking database for phocadownload component ...<br/>';
 			print_r($results);
+			$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
+fwrite($myfile, $txt);
+$txt = "Jane Doe\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+
 			if (!JComponentHelper::getComponent('com_phocadownload', true)->enabled)
 			{
 				Jerror::raiseWarning(null, 'cannot install or update the module because the phocadownload component is either not installed or not enabled');
