@@ -56,7 +56,7 @@
 			type="extension"
 			priority="2"
 			name="Phocadownload">
-			https://raw.githubusercontent.com/Katan-Technologies/mod_phocadownload/release_update/update.xml
+			https://raw.githubusercontent.com/Katan-Technologies/joomla_ext_updates/main/j4.x/modules/mod_phocadownload/updates.xml
 		</server>
 	</updateservers>
 </extension>
