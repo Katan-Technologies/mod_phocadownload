@@ -5,7 +5,7 @@
 	client="site"
 	method="upgrade">
 	<name>MOD_PHOCADOWNLOAD</name>
-	<version>1.0.7.1</version>
+	<version>1.0.7.2</version>
 	<creationDate>01-02-2023</creationDate><!-- dd-mm-yyy -->
 	<author>Kathryn Anderson</author>
 	<authorUrl>http://gokatan.com</authorUrl>
