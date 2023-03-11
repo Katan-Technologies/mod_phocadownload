@@ -100,12 +100,12 @@ class mod_phocadownloadInstallerScript {
 			return false;
 		}else{
 			Log::add('the phocadownload component is enabled', Log::ERROR, 'mod phocadownload check for extension');
-			echo Text::_('the phocadownload component is enabled');
+			//echo Text::_('the phocadownload component is enabled');
 			
 		}
 		
         echo Text::_('MOD_PHOCADOWNLOAD_INSTALLERSCRIPT_PREFLIGHT');
-        echo 'Min Joomla: '.$this->minimumJoomla . ' Min PHP: ' . $this->minimumPhp;
+        //echo 'Min Joomla: '.$this->minimumJoomla . ' Min PHP: ' . $this->minimumPhp;
 
         return true;
     }
