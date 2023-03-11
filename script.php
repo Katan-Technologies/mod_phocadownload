@@ -105,7 +105,7 @@ class mod_phocadownloadInstallerScript {
 		}
 		
         echo Text::_('MOD_PHOCADOWNLOAD_INSTALLERSCRIPT_PREFLIGHT');
-        echo $this->minimumJoomla . ' ' . $this->minimumPhp;
+        echo 'Min Joomla: '.$this->minimumJoomla . ' Min PHP: ' . $this->minimumPhp;
 
         return true;
     }
